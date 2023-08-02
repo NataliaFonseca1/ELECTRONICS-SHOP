@@ -1,0 +1,184 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: blueviolet;
+  color:#ffff;
+  
+}
+header nav ul li{
+  display: inline;
+}
+header nav ul li a{
+  color: #ffff;
+  text-decoration: none;
+  list-style: none;
+  justify-content: space-between;
+  margin: 5px;
+  font-weight: bold;
+  padding: 5px;
+  
+}
+section img {
+  max-width: 250px;
+  object-fit: cover;
+  height: auto;
+  min-height:250px;
+}
+p{
+  padding-top:10px ;
+}
+button{
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: blueviolet;
+  color: #ffff;
+
+}
+
+.container{
+  max-width: 1024px;
+  margin: auto;
+  width: 100%;
+}
+.header-container{
+  max-width: 1024px;
+  margin: auto;
+  padding: 15px;
+  width: 100%;
+display:flex;
+justify-content: space-between ;
+align-items: center;
+}
+.about-container{
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
+}
+
+.about-img{
+  max-width: 500px;
+}
+.about-container h2{
+  padding: 10px;
+  margin: 15px;
+  border-bottom: 5px solid blueviolet;
+}
+
+.about-container p{
+  padding: 10px;
+  margin: 15px;
+  font-size: 20px;
+}
+
+
+.products-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 25px;
+  list-style: none; 
+  padding-top: 20px; 
+  font-size: 20px;
+  
+}
+.products{
+  border-bottom: 5px solid blueviolet;
+  max-width: 20%;
+}
+@media screen and (max-width:767px){
+  .container{
+    width: 90%;
+    margin-right:20px;
+    margin-left:20px;
+    box-sizing: border-box;
+  }
+  .header-container{
+    width: 100%;
+  }
+  .about-container{
+    display: block;
+  }
+  .about-img{
+    max-width: 90%;
+  }  
+  .products-container {
+    width: 100%;
+    display: block;
+    margin:20px ;
+    padding: 10px;
+}
+.products-container p{
+  width: 100%;
+}
+.products{
+  width: 100%;
+   border-bottom: 5px solid blueviolet;
+}
+header nav ul li a{
+  margin-left: 20px;
+  padding: 10px;
+}
+section img{
+  width: 100%;
+  margin: auto;
+}
+
+button{
+  padding: 10px;
+  margin-bottom: 10px
+}
+
+}
+
+@media screen and (min-width: 820px ) and (max-width:1180px){
+  .container{
+    width: 100%;
+   
+    box-sizing: border-box;
+  }
+  .header-container{
+    max-width: 90%;
+  }
+  .about-container{
+    display: block;
+  }
+  
+.about-img{
+  margin: 20px;
+   max-width: 100%;
+  }
+  .products-container {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-right: 100px;
+}
+.products-container p{
+  max-width: 100%;
+  padding: 10px;
+}
+.products{
+  max-width: 100%;
+   margin: 20px;
+}
+
+section img{
+  width: 90%;
+  margin: auto;
+}
+
+button{
+  padding: 10px;
+  margin-bottom: 10px
+}
+
+}
